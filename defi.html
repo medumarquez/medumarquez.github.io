@@ -42,10 +42,16 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                Quel est l'adjectif permettent de décrire, par exemple, le fait de sécuriser un système par deux moyens indépendants ?
+                <p>Quel est l'adjectif permettent de décrire, par exemple, le fait de sécuriser un système par deux moyens indépendants ?</p>
+                <div class="input-group">
+                  <span class="input-group-text">🤔</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1" id='input1'>
+                  <!-- <span class="input-group-text btn btn-lg btn-light fw-bold border-white bg-white">Voilà ma réponse !</span> -->
+                  <button class="btn btn-light" type="button" id="button-addon2" onclick= "clickEvent()">Aight sí, por supesto!</button>
+                </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Bravo ! Question suivante...</button>
+                <button class="btn btn-primary hidden" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" id='button1'>Bravo 🎉 ! Question suivante...</button>
               </div>
             </div>
           </div>
@@ -54,14 +60,20 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Deuxième question</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                Hide this modal and show the first with the button below.
+                <p>Elle est le complémentaire du créateur du présent site, qui est-elle ?</p>
+                <div class="input-group">
+                  <span class="input-group-text">🤔</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1"  id='input2'>
+                  <!-- <span class="input-group-text btn btn-lg btn-light fw-bold border-white bg-white">Voilà ma réponse !</span> -->
+                  <button class="btn btn-light " type="button" id="button-addon2" onclick= "clickEvent2()">J'ai la réponse !</button>
+                </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">Back to first</button>
+                <button class="btn btn-primary hidden" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal" id='button2'>Bravo 🎉 ! Question suivante...</button>
               </div>
             </div>
           </div>
@@ -70,14 +82,20 @@
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">Modal 3</h1>
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">Dernière question</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                Hide this modal and show the first with the button below.
+                <p>C'est un domaine dans lequel Mme Coneja excède (sans qu'elle ne le sache elle-même) et pour lequel Mr Carot aura toujours une patte à lui prêter : quel est ce domaine ?</p>
+                <div class="input-group">
+                  <span class="input-group-text">🤔</span>
+                  <input type="text" class="form-control" aria-describedby="basic-addon1" id='input3'>
+                  <!-- <span class="input-group-text btn btn-lg btn-light fw-bold border-white bg-white">Voilà ma réponse !</span> -->
+                  <button class="btn btn-light" type="button" id="button-addon2" onclick= "clickEvent3()">J'ai la réponse !</button>
+                </div>
               </div>
               <div class="modal-footer">
-                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                <a class="btn btn-primary hidden" href="surprise_ok.html" id='button3'>Bravo !! Surprise surprise 😁</a>
               </div>
             </div>
           </div>
@@ -93,4 +111,23 @@
 
     
   </body>
+  <script>
+    function clickEvent() {
+      if (document.getElementById('input1').value == 'robustesse') {
+        document.getElementById('button1').classList.remove("hidden");
+      }
+    }
+
+    function clickEvent2() {
+      if (document.getElementById('input2').value == 'Mme Coneja') {
+        document.getElementById('button2').classList.remove("hidden");
+      }
+    }
+
+    function clickEvent3() {
+      if (document.getElementById('input3').value == 'cuisine') {
+        document.getElementById('button3').classList.remove("hidden");
+      }
+    }
+  </script>
 </html>

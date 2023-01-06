@@ -102,3 +102,11 @@ body {
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+
+.hidden {
+  visibility: hidden;
+}
+
+.modal-content {
+  background-color: #333;
+}

@@ -24,6 +24,10 @@ body {
   background-position: center;
 }
 
+img {
+  box-shadow: 0 0 10rem rgba(0, 0, 0, 1);
+}
+
 .cover-container {
   max-width: 42em;
 }
